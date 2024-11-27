@@ -14,6 +14,7 @@
     "@types/react": "18.2.45",
     "@types/react-dom": "18.2.17",
     "autoprefixer": "10.4.16",
+    "caniuse-lite": "^1.0.30001684",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "eslint": "8.55.0",
