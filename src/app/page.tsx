@@ -1,34 +1,20 @@
-import { Car, HardHat, Stethoscope, PersonStanding } from 'lucide-react'
+import { Car, HardHat, Stethoscope, PersonStanding, type LucideIcon } from 'lucide-react'
 import Link from 'next/link'
 import Hero from '@/components/layout/Hero'
-import ServiceGrid from '@/components/layout/ServiceGrid'
+import { HOME_TEXT } from '@/constants/text/pages'
+import type { Metadata } from 'next'
 
-const practiceAreas = [
-  {
-    title: 'AI-Powered Auto Analysis',
-    description: 'Advanced AI algorithms analyze accident data for stronger car accident cases',
-    icon: Car,
-    href: '/practice-areas/car-accidents'
-  },
-  {
-    title: 'Smart Site Safety',
-    description: 'AI-driven risk assessment and legal support for construction accidents',
-    icon: HardHat,
-    href: '/practice-areas/construction-accident'
-  },
-  {
-    title: 'Medical AI Analysis',
-    description: 'AI-enhanced medical record analysis for malpractice cases',
-    icon: Stethoscope,
-    href: '/practice-areas/medical-malpractices'
-  },
-  {
-    title: 'AI Case Assessment',
-    description: 'Data-driven personal injury case evaluation and strategy',
-    icon: PersonStanding,
-    href: '/practice-areas/personal-injuries'
-  }
-]
+export const metadata: Metadata = {
+  title: HOME_TEXT.META.TITLE,
+  description: HOME_TEXT.META.DESCRIPTION,
+}
+
+const areaIcons: Record<string, LucideIcon> = {
+  'AI-Powered Auto Analysis': Car,
+  'Smart Site Safety': HardHat,
+  'Medical AI Analysis': Stethoscope,
+  'AI Case Assessment': PersonStanding,
+}
 
 export default function Home() {
   return (
@@ -36,21 +22,26 @@ export default function Home() {
       <div className="-mb-16">
         <Hero />
       </div>
-      <ServiceGrid>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {practiceAreas.map((area, index) => (
-            <Link
-              key={index}
-              href={area.href}
-              className="group bg-dark/50 rounded-lg p-6 hover:bg-dark/70 transition-colors"
-            >
-              <area.icon className="w-32 h-32 text-primary mb-8 group-hover:scale-110 transition-transform" />
-              <h3 className="text-xl font-semibold mb-2">{area.title}</h3>
-              <p className="text-light text-sm">{area.description}</p>
-            </Link>
-          ))}
+      <section className="w-full bg-dark/50 py-16 md:py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {HOME_TEXT.FEATURES.LIST.map((feature, index) => {
+              const Icon = areaIcons[feature.title] || PersonStanding
+              return (
+                <Link
+                  key={feature.title}
+                  href={feature.href}
+                  className="group bg-dark/50 rounded-lg p-6 hover:bg-dark/70 transition-colors"
+                >
+                  <Icon className="w-32 h-32 text-primary mb-8 group-hover:scale-110 transition-transform" />
+                  <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
+                  <p className="text-light text-sm">{feature.description}</p>
+                </Link>
+              )
+            })}
+          </div>
         </div>
-      </ServiceGrid>
+      </section>
     </>
   )
 }
