@@ -1,8 +1,6 @@
 import { Metadata } from 'next'
-import Link from 'next/link'
 import { CONTACT_TEXT } from '@/constants/text/pages/contact'
 import { Icons } from '@/components/Icons'
-import { Button } from '@/components/Button'
 import { ContactForm } from '@/components/ContactForm'
 
 export const metadata: Metadata = {
@@ -39,12 +37,7 @@ export default function ContactPage() {
               >
                 {Icon && <Icon className="w-12 h-12 text-primary mx-auto mb-4" />}
                 <h3 className="text-xl font-bold mb-4">{channel.title}</h3>
-                <p className="text-light mb-6">{channel.description}</p>
-                <Link href={channel.href}>
-                  <Button variant="outline" size="sm">
-                    {channel.action}
-                  </Button>
-                </Link>
+                <p className="text-light">{channel.description}</p>
               </div>
             )
           })}
@@ -64,28 +57,6 @@ export default function ContactPage() {
             fields={CONTACT_TEXT.SECTIONS.FORM.FIELDS} 
             submitText={CONTACT_TEXT.SECTIONS.FORM.SUBMIT} 
           />
-        </div>
-      </section>
-
-      {/* Features */}
-      <section className="mt-24">
-        <h2 className="text-3xl font-bold mb-12 text-center">
-          {CONTACT_TEXT.SECTIONS.FEATURES.TITLE}
-        </h2>
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {CONTACT_TEXT.SECTIONS.FEATURES.LIST.map((feature, index) => {
-            const Icon = Icons[feature.icon as keyof typeof Icons]
-            return (
-              <div
-                key={index}
-                className="bg-dark/50 rounded-lg p-8"
-              >
-                {Icon && <Icon className="w-12 h-12 text-primary mb-4" />}
-                <h3 className="text-xl font-bold mb-4">{feature.title}</h3>
-                <p className="text-light">{feature.description}</p>
-              </div>
-            )
-          })}
         </div>
       </section>
 

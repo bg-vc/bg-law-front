@@ -14,6 +14,8 @@ import {
   Building,
   Target,
   Calculator,
+  MessageSquare,
+  Video,
   type LucideIcon,
 } from 'lucide-react'
 
@@ -33,4 +35,6 @@ export const Icons: Record<string, LucideIcon> = {
   'building': Building,
   'target': Target,
   'calculator': Calculator,
+  'message-square': MessageSquare,
+  'video': Video,
 }

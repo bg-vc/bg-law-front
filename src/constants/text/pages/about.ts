@@ -42,7 +42,6 @@ export const ABOUT_TEXT = {
       ],
     },
     STATS: {
-      TITLE: 'AI Impact in Numbers',
       LIST: [
         {
           value: '500K+',
@@ -55,10 +54,6 @@ export const ABOUT_TEXT = {
         {
           value: '60%',
           label: 'Time Saved',
-        },
-        {
-          value: '24/7',
-          label: 'AI Availability',
         },
       ],
     },

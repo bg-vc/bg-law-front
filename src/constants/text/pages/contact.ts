@@ -14,30 +14,22 @@ export const CONTACT_TEXT = {
         {
           title: 'AI Chat Support',
           description: 'Get instant answers from our AI legal assistant',
-          icon: 'message-circle',
-          action: 'Chat Now',
-          href: '/chat',
+          icon: 'message-square'
         },
         {
           title: 'Digital Consultation',
           description: 'Schedule a video call with our tech-savvy attorneys',
-          icon: 'video',
-          action: 'Book Online',
-          href: '/schedule',
+          icon: 'video'
         },
         {
           title: 'Smart Case Review',
           description: 'Submit your case for AI-powered preliminary analysis',
-          icon: 'file-text',
-          action: 'Submit Case',
-          href: '/review',
+          icon: 'file-text'
         },
         {
           title: 'AI Response Center',
           description: '24/7 automated response system for urgent inquiries',
-          icon: 'clock',
-          action: 'Contact Now',
-          href: '/support',
+          icon: 'clock'
         },
       ],
     },
@@ -64,31 +56,6 @@ export const CONTACT_TEXT = {
       },
       SUBMIT: 'Submit for AI Analysis',
     },
-    FEATURES: {
-      TITLE: 'Digital Advantages',
-      LIST: [
-        {
-          title: 'Instant Response',
-          description: 'AI-powered 24/7 initial consultation',
-          icon: 'zap',
-        },
-        {
-          title: 'Smart Routing',
-          description: 'AI matches you with the best legal expert',
-          icon: 'git-merge',
-        },
-        {
-          title: 'Secure Platform',
-          description: 'Advanced encryption for all communications',
-          icon: 'shield',
-        },
-        {
-          title: 'Data Analytics',
-          description: 'AI-enhanced case assessment',
-          icon: 'bar-chart',
-        },
-      ],
-    },
     LOCATION: {
       TITLE: 'Visit Our Tech Hub',
       ADDRESS: {
@@ -97,9 +64,9 @@ export const CONTACT_TEXT = {
         STATE: 'CA',
         ZIP: '94025',
       },
-      HOURS: 'Physical Office: 9AM-6PM PT | Digital Services: 24/7',
       PHONE: '(555) 123-4567',
       EMAIL: 'ai@bglaw.com',
+      HOURS: 'Physical Office: 9AM-6PM PT | Digital Services: 24/7',
     },
   },
 }

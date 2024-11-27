@@ -51,8 +51,8 @@ export default function About() {
                 key={value.title}
                 className="bg-dark/50 rounded-lg p-6 text-center"
               >
-                <div className="inline-flex items-center justify-center w-12 h-12 bg-primary/10 rounded-full mb-4">
-                  <Icon className="w-6 h-6 text-primary" />
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-4">
+                  <Icon className="w-8 h-8 text-primary" />
                 </div>
                 <h3 className="text-lg font-semibold mb-2">{value.title}</h3>
                 <p className="text-light">{value.description}</p>
