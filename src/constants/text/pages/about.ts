@@ -1,59 +1,66 @@
 export const ABOUT_TEXT = {
   META: {
-    TITLE: 'About BGLaw - AI-Powered Legal Excellence',
-    DESCRIPTION: 'Learn about our innovative approach to legal services, combining traditional expertise with cutting-edge AI technology.',
+    TITLE: 'About BGLaw - AI-Powered Legal Innovation',
+    DESCRIPTION: 'Discover how BGLaw combines artificial intelligence with legal expertise to revolutionize legal services and deliver superior outcomes.',
   },
   HERO: {
-    TITLE: 'About BGLaw',
-    DESCRIPTION: 'Pioneering the future of legal services with artificial intelligence.',
+    TITLE: 'Pioneering AI-Driven Legal Services',
+    DESCRIPTION: 'We are at the forefront of legal innovation, leveraging advanced AI technology to transform traditional legal practice into a data-driven, efficient, and precise service.',
   },
   SECTIONS: {
     MISSION: {
-      TITLE: 'Our Mission',
-      DESCRIPTION: 'To provide exceptional legal services by combining human expertise with artificial intelligence, ensuring the best possible outcomes for our clients.',
+      TITLE: 'Our AI-Driven Mission',
+      DESCRIPTION: 'To revolutionize legal services by combining cutting-edge artificial intelligence with expert legal knowledge, providing faster, more accurate, and data-backed legal solutions for our clients.',
     },
     VISION: {
-      TITLE: 'Our Vision',
-      DESCRIPTION: 'To be the leading AI-powered law firm, setting new standards in legal service delivery through technological innovation.',
+      TITLE: 'Future of Legal Tech',
+      DESCRIPTION: 'We envision a future where AI-powered legal analysis becomes the industry standard, making justice more accessible, efficient, and precise through technological innovation.',
     },
     VALUES: {
-      TITLE: 'Our Values',
+      TITLE: 'Our Tech-Forward Values',
       LIST: [
         {
-          title: 'Innovation',
-          description: 'Embracing cutting-edge technology to enhance our legal services.',
-          icon: 'award'
+          title: 'AI-Enhanced Excellence',
+          description: 'Leveraging artificial intelligence to deliver superior legal outcomes',
+          icon: 'award',
         },
         {
-          title: 'Excellence',
-          description: 'Delivering superior results through the combination of expertise and AI.',
-          icon: 'scale'
+          title: 'Data-Driven Justice',
+          description: 'Making legal decisions backed by advanced analytics and machine learning',
+          icon: 'scale',
         },
         {
-          title: 'Integrity',
-          description: 'Maintaining the highest ethical standards in all our practices.',
-          icon: 'heart'
+          title: 'Innovation First',
+          description: 'Continuously evolving our AI capabilities to stay ahead of legal challenges',
+          icon: 'heart',
         },
         {
-          title: 'Client-Centric',
-          description: 'Focusing on client needs and success through personalized solutions.',
-          icon: 'users'
+          title: 'Client-Centric Tech',
+          description: 'Using AI to provide personalized, efficient legal solutions',
+          icon: 'users',
+        },
+      ],
+    },
+    STATS: {
+      TITLE: 'AI Impact in Numbers',
+      LIST: [
+        {
+          value: '500K+',
+          label: 'AI-Analyzed Cases',
+        },
+        {
+          value: '95%',
+          label: 'Prediction Accuracy',
+        },
+        {
+          value: '60%',
+          label: 'Time Saved',
+        },
+        {
+          value: '24/7',
+          label: 'AI Availability',
         },
       ],
     },
   },
-  STATS: [
-    {
-      value: '95%',
-      label: 'Success Rate',
-    },
-    {
-      value: '1000+',
-      label: 'Cases Analyzed',
-    },
-    {
-      value: '50M+',
-      label: 'Data Points Processed',
-    },
-  ],
 }

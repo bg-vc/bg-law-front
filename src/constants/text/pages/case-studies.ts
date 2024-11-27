@@ -1,53 +1,99 @@
 export const CASE_STUDIES_TEXT = {
   META: {
-    TITLE: 'AI-Powered Case Studies - BGLaw',
-    DESCRIPTION: 'Explore how we leverage AI technology to achieve exceptional outcomes in complex legal cases.',
+    TITLE: 'AI-Powered Legal Success Stories | BGLaw',
+    DESCRIPTION: 'Explore how our AI-enhanced legal strategies have revolutionized case outcomes and delivered unprecedented success for our clients.',
   },
   HERO: {
-    TITLE: 'Case Studies',
-    DESCRIPTION: 'Discover how our AI-powered legal strategies have helped clients achieve remarkable outcomes.',
+    TITLE: 'AI-Driven Legal Victories',
+    DESCRIPTION: 'Discover how our innovative combination of artificial intelligence and legal expertise has transformed challenging cases into remarkable successes.',
   },
-  CASES: [
-    {
-      title: 'AI-Driven Accident Reconstruction',
-      description: 'Using advanced AI algorithms to reconstruct a complex multi-vehicle accident, leading to a favorable settlement.',
-      outcome: '$2.5M Settlement',
-      category: 'Auto Accident',
-      icon: 'car' as const,
-      highlights: [
-        'Advanced AI reconstruction',
-        'Multiple vehicle analysis',
-        'Favorable settlement achieved'
-      ]
+  SECTIONS: {
+    FEATURED: {
+      TITLE: 'AI Success Stories',
+      LIST: [
+        {
+          title: 'Predictive Analytics Wins Complex Litigation',
+          description: 'Using AI-powered predictive analytics to achieve a 95% favorable outcome in a multi-million dollar corporate dispute.',
+          category: 'Corporate Law',
+          impact: 'Reduced case duration by 60%',
+          icon: 'trending-up',
+        },
+        {
+          title: 'AI-Enhanced Patent Defense',
+          description: 'Leveraging machine learning for comprehensive patent analysis, successfully defending against infringement claims.',
+          category: 'Intellectual Property',
+          impact: '100% success rate',
+          icon: 'shield',
+        },
+        {
+          title: 'Smart Contract Revolution',
+          description: 'Implementing AI-powered contract analysis to streamline M&A due diligence, saving thousands of review hours.',
+          category: 'M&A',
+          impact: '80% time savings',
+          icon: 'file-text',
+        },
+        {
+          title: 'Digital Evidence Mastery',
+          description: 'Using AI to analyze vast amounts of digital evidence, uncovering key insights that won a complex fraud case.',
+          category: 'Criminal Defense',
+          impact: 'Key evidence found in 24 hours',
+          icon: 'search',
+        },
+      ],
     },
-    {
-      title: 'Predictive Analysis in Medical Malpractice',
-      description: 'Leveraging machine learning to analyze thousands of similar cases and predict optimal settlement ranges.',
-      outcome: '$3.8M Settlement',
-      category: 'Medical Malpractice',
-      icon: 'medical' as const,
-      highlights: [
-        'ML-based case analysis',
-        'Optimal settlement prediction',
-        'Successful negotiation'
-      ]
+    METRICS: {
+      TITLE: 'AI Impact Metrics',
+      LIST: [
+        {
+          title: 'Case Analysis Speed',
+          description: 'AI reduces case analysis time by 75%',
+          icon: 'clock',
+          value: '75%',
+        },
+        {
+          title: 'Prediction Accuracy',
+          description: 'AI-powered outcome predictions',
+          icon: 'target',
+          value: '95%',
+        },
+        {
+          title: 'Cost Reduction',
+          description: 'Average client cost savings',
+          icon: 'dollar-sign',
+          value: '40%',
+        },
+        {
+          title: 'Success Rate',
+          description: 'AI-enhanced case success rate',
+          icon: 'award',
+          value: '92%',
+        },
+      ],
     },
-    {
-      title: 'Data-Driven Workplace Safety',
-      description: 'Using AI to analyze workplace safety patterns and establish negligence in a construction accident case.',
-      outcome: '$1.9M Settlement',
-      category: 'Workplace Injury',
-      icon: 'hardhat' as const,
-      highlights: [
-        'Safety pattern analysis',
-        'Negligence establishment',
-        'Fair compensation secured'
-      ]
+    TECHNOLOGIES: {
+      TITLE: 'Our AI Arsenal',
+      LIST: [
+        {
+          title: 'Neural Networks',
+          description: 'Deep learning for complex legal analysis',
+          icon: 'brain',
+        },
+        {
+          title: 'NLP Systems',
+          description: 'Advanced document understanding and analysis',
+          icon: 'file-text',
+        },
+        {
+          title: 'Predictive Models',
+          description: 'Case outcome and risk assessment',
+          icon: 'trending-up',
+        },
+        {
+          title: 'Machine Learning',
+          description: 'Pattern recognition in legal precedents',
+          icon: 'cpu',
+        },
+      ],
     },
-  ],
-  LABELS: {
-    CATEGORY: 'Category:',
-    OUTCOME: 'Outcome:',
-    READ_MORE: 'Read Full Case Study',
   },
 }

@@ -1,93 +1,105 @@
 export const CONTACT_TEXT = {
   META: {
-    TITLE: 'Contact BGLaw - AI-Powered Legal Services',
-    DESCRIPTION: 'Get in touch with our AI-augmented legal team for innovative solutions to your legal challenges.',
+    TITLE: 'Contact Our AI Legal Team | BGLaw',
+    DESCRIPTION: 'Connect with our AI-enhanced legal team for innovative solutions to your legal challenges. Available 24/7 through our digital platforms.',
   },
   HERO: {
-    TITLE: 'Contact Us',
-    DESCRIPTION: 'Connect with our AI-powered legal team for innovative solutions to your legal challenges.',
+    TITLE: 'Connect with AI-Enhanced Legal Support',
+    DESCRIPTION: 'Experience the future of legal consultation with our AI-powered communication channels and instant response systems.',
   },
-  INFO_SECTIONS: [
-    {
-      title: 'Phone',
-      icon: 'phone',
-      details: [
+  SECTIONS: {
+    CHANNELS: {
+      TITLE: 'Smart Contact Options',
+      LIST: [
         {
-          label: 'Main Office',
-          value: '+1 (555) 123-4567'
+          title: 'AI Chat Support',
+          description: 'Get instant answers from our AI legal assistant',
+          icon: 'message-circle',
+          action: 'Chat Now',
+          href: '/chat',
         },
         {
-          label: '24/7 Support',
-          value: '+1 (555) 987-6543'
-        }
-      ]
+          title: 'Digital Consultation',
+          description: 'Schedule a video call with our tech-savvy attorneys',
+          icon: 'video',
+          action: 'Book Online',
+          href: '/schedule',
+        },
+        {
+          title: 'Smart Case Review',
+          description: 'Submit your case for AI-powered preliminary analysis',
+          icon: 'file-text',
+          action: 'Submit Case',
+          href: '/review',
+        },
+        {
+          title: 'AI Response Center',
+          description: '24/7 automated response system for urgent inquiries',
+          icon: 'clock',
+          action: 'Contact Now',
+          href: '/support',
+        },
+      ],
     },
-    {
-      title: 'Email',
-      icon: 'mail',
-      details: [
-        {
-          label: 'General Inquiries',
-          value: 'contact@bglaw.ai'
+    FORM: {
+      TITLE: 'AI-Assisted Contact Form',
+      DESCRIPTION: 'Our AI system will analyze your inquiry and route it to the most qualified legal expert',
+      FIELDS: {
+        NAME: {
+          label: 'Full Name',
+          placeholder: 'Enter your full name',
         },
-        {
-          label: 'Support',
-          value: 'support@bglaw.ai'
-        }
-      ]
-    },
-    {
-      title: 'Location',
-      icon: 'location',
-      details: [
-        {
-          label: 'Address',
-          value: '123 AI Law Street'
+        EMAIL: {
+          label: 'Email Address',
+          placeholder: 'Enter your email',
         },
-        {
-          label: 'City',
-          value: 'Silicon Valley, CA 94025'
-        }
-      ]
-    },
-    {
-      title: 'Office Hours',
-      icon: 'time',
-      details: [
-        {
-          label: 'Weekdays',
-          value: '9:00 AM - 6:00 PM'
+        PHONE: {
+          label: 'Phone Number',
+          placeholder: 'Enter your phone number',
         },
-        {
-          label: 'AI Support',
-          value: '24/7 Available'
-        }
-      ]
-    }
-  ],
-  FORM: {
-    TITLE: 'Send us a Message',
-    DESCRIPTION: 'Fill out the form below and our team will get back to you promptly.',
-    FIELDS: [
-      {
-        name: 'name',
-        type: 'text',
-        label: 'Full Name',
-        placeholder: 'Enter your full name'
+        MESSAGE: {
+          label: 'Case Description',
+          placeholder: 'Describe your legal matter (AI will analyze for optimal routing)',
+        },
       },
-      {
-        name: 'email',
-        type: 'email',
-        label: 'Email Address',
-        placeholder: 'Enter your email address'
+      SUBMIT: 'Submit for AI Analysis',
+    },
+    FEATURES: {
+      TITLE: 'Digital Advantages',
+      LIST: [
+        {
+          title: 'Instant Response',
+          description: 'AI-powered 24/7 initial consultation',
+          icon: 'zap',
+        },
+        {
+          title: 'Smart Routing',
+          description: 'AI matches you with the best legal expert',
+          icon: 'git-merge',
+        },
+        {
+          title: 'Secure Platform',
+          description: 'Advanced encryption for all communications',
+          icon: 'shield',
+        },
+        {
+          title: 'Data Analytics',
+          description: 'AI-enhanced case assessment',
+          icon: 'bar-chart',
+        },
+      ],
+    },
+    LOCATION: {
+      TITLE: 'Visit Our Tech Hub',
+      ADDRESS: {
+        STREET: '123 Innovation Drive',
+        CITY: 'Silicon Valley',
+        STATE: 'CA',
+        ZIP: '94025',
       },
-      {
-        name: 'message',
-        type: 'textarea',
-        label: 'Your Message',
-        placeholder: 'Tell us about your case'
-      }
-    ],
-    SUBMIT_BUTTON: 'Send Message'
-  }
+      HOURS: 'Physical Office: 9AM-6PM PT | Digital Services: 24/7',
+      PHONE: '(555) 123-4567',
+      EMAIL: 'ai@bglaw.com',
+    },
+  },
 }
