@@ -4,7 +4,7 @@ import { Scale } from 'lucide-react'
 
 export default function Hero() {
   return (
-    <section className="relative w-full bg-dark pt-16">
+    <section className="relative w-full bg-dark pt-8">
       <div className="mx-auto max-w-7xl h-full px-4 sm:px-6 lg:px-8 py-16 md:py-20 flex flex-col md:flex-row items-center justify-between">
         <div className="max-w-[500px] text-center md:text-left mb-12 md:mb-0">
           <p className="text-primary text-sm md:text-base uppercase tracking-wider mb-4">
