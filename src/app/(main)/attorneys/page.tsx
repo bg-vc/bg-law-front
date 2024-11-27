@@ -51,7 +51,7 @@ export default function Attorneys() {
             key={attorney.name}
             className="bg-dark/50 rounded-lg overflow-hidden"
           >
-            <div className="relative h-[300px] overflow-hidden bg-dark/50 flex items-center justify-center">
+            <div className="relative h-[300px] overflow-hidden bg-dark/50 flex items-center justify-start pl-8">
               <attorney.icon className="w-32 h-32 text-primary" />
             </div>
             <div className="p-6">
