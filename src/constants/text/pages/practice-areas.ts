@@ -29,24 +29,6 @@ export const PRACTICE_AREAS_TEXT = {
           icon: 'scale',
           href: '/practice-areas/litigation',
         },
-        {
-          title: 'AI Real Estate Law',
-          description: 'Smart contract automation and AI-driven property analysis for faster, more secure real estate transactions and dispute resolution.',
-          icon: 'home',
-          href: '/practice-areas/real-estate',
-        },
-        {
-          title: 'Digital Employment Law',
-          description: 'AI-powered HR compliance monitoring, automated policy reviews, and predictive risk analysis for modern workplace challenges.',
-          icon: 'users',
-          href: '/practice-areas/employment',
-        },
-        {
-          title: 'Tech-Forward Tax Law',
-          description: 'AI-assisted tax planning, automated compliance checks, and predictive analysis for optimal tax strategies and risk management.',
-          icon: 'calculator',
-          href: '/practice-areas/tax',
-        },
       ],
     },
     FEATURES: {
@@ -66,11 +48,6 @@ export const PRACTICE_AREAS_TEXT = {
           title: 'Smart Contracts',
           description: 'AI-assisted contract drafting and review',
           icon: 'file-text',
-        },
-        {
-          title: 'Real-time Monitoring',
-          description: '24/7 AI compliance and risk monitoring',
-          icon: 'activity',
         },
       ],
     },

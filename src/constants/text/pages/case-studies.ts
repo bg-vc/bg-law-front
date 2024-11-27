@@ -1,8 +1,4 @@
 export const CASE_STUDIES_TEXT = {
-  META: {
-    TITLE: 'AI-Powered Legal Success Stories | BGLaw',
-    DESCRIPTION: 'Explore how our AI-enhanced legal strategies have revolutionized case outcomes and delivered unprecedented success for our clients.',
-  },
   HERO: {
     TITLE: 'AI-Driven Legal Victories',
     DESCRIPTION: 'Discover how our innovative combination of artificial intelligence and legal expertise has transformed challenging cases into remarkable successes.',
@@ -31,13 +27,6 @@ export const CASE_STUDIES_TEXT = {
           category: 'M&A',
           impact: '80% time savings',
           icon: 'file-text',
-        },
-        {
-          title: 'Digital Evidence Mastery',
-          description: 'Using AI to analyze vast amounts of digital evidence, uncovering key insights that won a complex fraud case.',
-          category: 'Criminal Defense',
-          impact: 'Key evidence found in 24 hours',
-          icon: 'search',
         },
       ],
     },
@@ -87,11 +76,6 @@ export const CASE_STUDIES_TEXT = {
           title: 'Predictive Models',
           description: 'Case outcome and risk assessment',
           icon: 'trending-up',
-        },
-        {
-          title: 'Machine Learning',
-          description: 'Pattern recognition in legal precedents',
-          icon: 'cpu',
         },
       ],
     },

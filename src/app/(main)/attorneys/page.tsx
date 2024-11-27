@@ -57,25 +57,6 @@ export default function AttorneysPage() {
         </div>
       </div>
 
-      {/* Expertise Section */}
-      <div className="mb-16">
-        <h2 className="text-3xl font-bold mb-8 text-center">{ATTORNEYS_TEXT.SECTIONS.EXPERTISE.TITLE}</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {ATTORNEYS_TEXT.SECTIONS.EXPERTISE.LIST.map((item, index) => (
-            <div
-              key={index}
-              className="bg-card p-6 rounded-lg text-center"
-            >
-              <div className="w-12 h-12 bg-muted rounded-full flex items-center justify-center mx-auto mb-4">
-                <User2 className="w-6 h-6" />
-              </div>
-              <h3 className="font-bold mb-2">{item.title}</h3>
-              <p className="text-light">{item.description}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-
       {/* Stats Section */}
       <div>
         <h2 className="text-3xl font-bold mb-8 text-center">{ATTORNEYS_TEXT.SECTIONS.STATS.TITLE}</h2>

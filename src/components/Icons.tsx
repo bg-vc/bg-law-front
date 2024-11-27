@@ -11,6 +11,7 @@ import {
   Lightbulb,
   Database,
   Network,
+  Building,
   type LucideIcon,
 } from 'lucide-react'
 
@@ -27,4 +28,5 @@ export const Icons: Record<string, LucideIcon> = {
   'lightbulb': Lightbulb,
   'database': Database,
   'network': Network,
+  'building': Building,
 }

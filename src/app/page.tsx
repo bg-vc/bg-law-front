@@ -1,5 +1,4 @@
 import { Car, HardHat, Stethoscope, PersonStanding, type LucideIcon } from 'lucide-react'
-import Link from 'next/link'
 import Hero from '@/components/layout/Hero'
 import { HOME_TEXT } from '@/constants/text/pages'
 import type { Metadata } from 'next'
@@ -28,15 +27,14 @@ export default function Home() {
             {HOME_TEXT.FEATURES.LIST.map((feature, index) => {
               const Icon = areaIcons[feature.title] || PersonStanding
               return (
-                <Link
+                <div
                   key={feature.title}
-                  href={feature.href}
-                  className="group bg-dark/50 rounded-lg p-6 hover:bg-dark/70 transition-colors"
+                  className="bg-dark/50 rounded-lg p-6 hover:bg-dark/70 transition-colors"
                 >
-                  <Icon className="w-32 h-32 text-primary mb-8 group-hover:scale-110 transition-transform" />
+                  <Icon className="w-16 h-16 text-primary mb-8" />
                   <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
                   <p className="text-light text-sm">{feature.description}</p>
-                </Link>
+                </div>
               )
             })}
           </div>

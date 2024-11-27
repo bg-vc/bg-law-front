@@ -2,6 +2,12 @@ import { PersonStanding, type LucideIcon } from 'lucide-react'
 import Link from 'next/link'
 import { CASE_STUDIES_TEXT } from '@/constants/text/pages/case-studies'
 import { Icons } from '@/components/Icons'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'AI-Powered Legal Success Stories | BGLaw',
+  description: 'Explore how our AI-enhanced legal strategies have revolutionized case outcomes and delivered unprecedented success for our clients.',
+}
 
 export default function CaseStudiesPage() {
   return (
