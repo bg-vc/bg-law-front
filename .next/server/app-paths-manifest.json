@@ -1,8 +1,7 @@
 {
   "/page": "app/page.js",
-  "/(main)/resource/page": "app/(main)/resource/page.js",
+  "/(main)/practice-area/page": "app/(main)/practice-area/page.js",
   "/(main)/attorneys/page": "app/(main)/attorneys/page.js",
-  "/(main)/about/page": "app/(main)/about/page.js",
-  "/(main)/contact/page": "app/(main)/contact/page.js",
-  "/(main)/practice-area/page": "app/(main)/practice-area/page.js"
+  "/(main)/case-studies/page": "app/(main)/case-studies/page.js",
+  "/(main)/contact/page": "app/(main)/contact/page.js"
 }

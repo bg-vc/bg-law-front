@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { Menu, X } from 'lucide-react'
+import { Menu, X, Globe } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 const navigation = [
@@ -18,6 +18,7 @@ const navigation = [
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [currentLang, setCurrentLang] = useState('en')
   const pathname = usePathname()
 
   const isActive = (href: string) => {
@@ -25,6 +26,10 @@ export default function Header() {
       return pathname === href
     }
     return pathname.startsWith(href)
+  }
+
+  const toggleLanguage = () => {
+    setCurrentLang(prev => prev === 'en' ? 'zh' : 'en')
   }
 
   return (
@@ -63,6 +68,16 @@ export default function Header() {
                 {item.name}
               </Link>
             ))}
+            
+            {/* Language Toggle Button */}
+            <button 
+              onClick={toggleLanguage}
+              className="text-light hover:text-gold transition-colors ml-4 flex items-center"
+              aria-label="Toggle Language"
+            >
+              <Globe className="h-5 w-5" />
+              <span className="ml-1 text-sm font-semibold">{currentLang.toUpperCase()}</span>
+            </button>
           </div>
         </div>
 
@@ -91,6 +106,14 @@ export default function Header() {
             <div className="mt-6 flow-root">
               <div className="-my-6 divide-y divide-gray-500/25">
                 <div className="space-y-2 py-6">
+                  {/* Language Toggle Button (Mobile) */}
+                  <button
+                    onClick={toggleLanguage}
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-light hover:bg-gray-800 w-full text-left flex items-center"
+                  >
+                    <Globe className="h-5 w-5 mr-2" />
+                    <span>{currentLang === 'en' ? 'Switch to 中文' : 'Switch to English'}</span>
+                  </button>
                   {navigation.map((item) => (
                     <Link
                       key={item.name}
