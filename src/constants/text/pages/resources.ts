@@ -16,7 +16,7 @@ export const RESOURCES_TEXT = {
           description: 'How artificial intelligence is revolutionizing law practice and improving client outcomes',
           category: 'Legal Tech',
           readTime: '5 min',
-          icon: 'cpu',
+          icon: 'brain',
         },
         {
           title: 'Predictive Justice',
@@ -32,13 +32,6 @@ export const RESOURCES_TEXT = {
           readTime: '10 min',
           icon: 'file-text',
         },
-        {
-          title: 'Digital Evidence',
-          description: 'Leveraging AI for effective digital evidence management and analysis',
-          category: 'Practice',
-          readTime: '7 min',
-          icon: 'database',
-        },
       ],
     },
     TOOLS: {
@@ -47,26 +40,17 @@ export const RESOURCES_TEXT = {
         {
           title: 'Case Predictor',
           description: 'AI-powered tool for case outcome prediction',
-          icon: 'activity',
-          href: '/tools/predictor',
+          icon: 'target',
         },
         {
           title: 'Doc Analyzer',
           description: 'Automated legal document analysis system',
           icon: 'search',
-          href: '/tools/analyzer',
         },
         {
           title: 'Risk Calculator',
           description: 'AI risk assessment for legal scenarios',
-          icon: 'alert-triangle',
-          href: '/tools/risk',
-        },
-        {
-          title: 'Compliance AI',
-          description: '24/7 automated compliance monitoring',
-          icon: 'shield',
-          href: '/tools/compliance',
+          icon: 'calculator',
         },
       ],
     },
@@ -75,48 +59,44 @@ export const RESOURCES_TEXT = {
       LIST: [
         {
           title: 'Legal AI Research',
-          description: 'Latest developments in legal AI technology',
-          icon: 'microscope',
           count: '25+ articles',
+          icon: 'microscope',
         },
         {
           title: 'Tech Practice Guides',
-          description: 'How-to guides for AI legal tools',
-          icon: 'book-open',
           count: '40+ guides',
+          icon: 'book-open',
         },
         {
           title: 'Digital Case Studies',
-          description: 'Real-world AI legal success stories',
-          icon: 'folder',
           count: '30+ cases',
+          icon: 'folder',
         },
         {
           title: 'AI Legal Updates',
-          description: 'Latest in AI law and regulation',
-          icon: 'refresh-cw',
           count: '15+ updates',
+          icon: 'refresh-cw',
         },
       ],
     },
     STATS: {
-      TITLE: 'Resource Impact',
+      TITLE: 'Resource Metrics',
       LIST: [
         {
-          value: '10K+',
-          label: 'Monthly Users',
+          value: '10+',
+          label: 'AI Tools Available',
         },
         {
-          value: '95%',
-          label: 'User Success Rate',
-        },
-        {
-          value: '500+',
-          label: 'AI Tools Used',
+          value: '100+',
+          label: 'Legal Tech Articles',
         },
         {
           value: '24/7',
-          label: 'Tool Availability',
+          label: 'Real-time Updates',
+        },
+        {
+          value: '5000+',
+          label: 'Active Users',
         },
       ],
     },

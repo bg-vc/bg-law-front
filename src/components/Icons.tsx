@@ -12,6 +12,8 @@ import {
   Database,
   Network,
   Building,
+  Target,
+  Calculator,
   type LucideIcon,
 } from 'lucide-react'
 
@@ -29,4 +31,6 @@ export const Icons: Record<string, LucideIcon> = {
   'database': Database,
   'network': Network,
   'building': Building,
+  'target': Target,
+  'calculator': Calculator,
 }

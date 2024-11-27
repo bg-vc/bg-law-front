@@ -57,15 +57,14 @@ export default function ResourcesPage() {
           {RESOURCES_TEXT.SECTIONS.TOOLS.LIST.map((tool, index) => {
             const Icon = Icons[tool.icon as keyof typeof Icons]
             return (
-              <Link
+              <div
                 key={index}
-                href={tool.href}
                 className="bg-dark/50 rounded-lg p-8 hover:bg-dark/70 transition-colors"
               >
                 {Icon && <Icon className="w-12 h-12 text-primary mb-4" />}
                 <h3 className="text-2xl font-bold mb-4">{tool.title}</h3>
                 <p className="text-light">{tool.description}</p>
-              </Link>
+              </div>
             )
           })}
         </div>
