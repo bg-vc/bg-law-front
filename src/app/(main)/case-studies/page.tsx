@@ -1,70 +1,105 @@
-import type { Metadata } from 'next'
+import { PersonStanding, type LucideIcon } from 'lucide-react'
 import Link from 'next/link'
-import { ArrowRight, Car, HardHat, Stethoscope, PersonStanding, type LucideIcon } from 'lucide-react'
-import PageHeader from '@/components/PageHeader'
-import { Button } from '@/components/Button'
-import { CASE_STUDIES_TEXT } from '@/constants/text/pages'
+import { CASE_STUDIES_TEXT } from '@/constants/text/pages/case-studies'
+import { Icons } from '@/components/Icons'
 
-export const metadata: Metadata = {
-  title: CASE_STUDIES_TEXT.META.TITLE,
-  description: CASE_STUDIES_TEXT.META.DESCRIPTION
-}
-
-const caseIcons: Record<string, LucideIcon> = {
-  'car': Car,
-  'hardhat': HardHat,
-  'medical': Stethoscope,
-  'personal': PersonStanding,
-}
-
-export default function CaseStudies() {
+export default function CaseStudiesPage() {
   return (
-    <div className="container mx-auto px-4 py-16">
-      <PageHeader
-        title={CASE_STUDIES_TEXT.HERO.TITLE}
-        description={CASE_STUDIES_TEXT.HERO.DESCRIPTION}
-      />
+    <main className="container mx-auto px-4 py-16">
+      {/* Hero Section */}
+      <div className="text-center mb-16">
+        <h1 className="text-5xl font-bold mb-6">
+          {CASE_STUDIES_TEXT.HERO.TITLE}
+        </h1>
+        <p className="text-xl text-light max-w-3xl mx-auto">
+          {CASE_STUDIES_TEXT.HERO.DESCRIPTION}
+        </p>
+      </div>
 
-      <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {CASE_STUDIES_TEXT.CASES.map((study) => {
-          const Icon = caseIcons[study.icon] || PersonStanding
-          return (
-            <div
-              key={study.title}
-              className="bg-dark/50 rounded-lg overflow-hidden hover:bg-dark/70 transition-colors"
-            >
-              <div className="p-8">
-                <div className="flex items-center justify-between mb-4">
-                  <span className="text-primary text-sm">{study.category}</span>
-                  <Icon className="w-6 h-6 text-primary" />
-                </div>
-                <h3 className="text-xl font-semibold mb-2">{study.title}</h3>
-                <p className="text-light mb-4">{study.description}</p>
-                <div className="mb-4">
-                  <span className="text-2xl font-bold text-primary">{study.outcome}</span>
-                </div>
-                <div className="mb-6">
-                  <ul className="space-y-2">
-                    {study.highlights.map((highlight, index) => (
-                      <li key={index} className="flex items-center text-sm text-light">
-                        <ArrowRight className="w-4 h-4 text-primary mr-2 flex-shrink-0" />
-                        {highlight}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+      {/* Featured Case Studies */}
+      <section>
+        <h2 className="text-3xl font-bold mb-8">
+          {CASE_STUDIES_TEXT.SECTIONS.FEATURED.TITLE}
+        </h2>
+
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {CASE_STUDIES_TEXT.SECTIONS.FEATURED.LIST.map((study, index) => {
+            const Icon = Icons[study.icon as keyof typeof Icons] || PersonStanding
+            return (
+              <div
+                key={index}
+                className="bg-dark/50 rounded-lg p-8 hover:bg-dark/70 transition-colors"
+              >
                 <Link
-                  href={`/case-studies/${study.title.toLowerCase().replace(/\s+/g, '-')}`}
-                  className="inline-flex items-center text-primary hover:text-primary/80 transition-colors"
+                  href={`/case-studies/${study.title
+                    .toLowerCase()
+                    .replace(/\s+/g, '-')}`}
+                  className="block h-full"
                 >
-                  {CASE_STUDIES_TEXT.LABELS.READ_MORE}
-                  <ArrowRight className="w-4 h-4 ml-2" />
+                  <div className="flex items-center gap-4 mb-4">
+                    <Icon className="w-8 h-8 text-primary" />
+                    <span className="text-primary">{study.category}</span>
+                  </div>
+                  <h3 className="text-2xl font-bold mb-4">{study.title}</h3>
+                  <p className="text-light mb-6">{study.description}</p>
+                  <div className="mt-auto">
+                    <span className="text-primary font-semibold">
+                      {study.impact}
+                    </span>
+                  </div>
                 </Link>
               </div>
-            </div>
-          )
-        })}
-      </div>
-    </div>
+            )
+          })}
+        </div>
+      </section>
+
+      {/* Metrics Section */}
+      <section className="mt-24">
+        <h2 className="text-3xl font-bold mb-12 text-center">
+          {CASE_STUDIES_TEXT.SECTIONS.METRICS.TITLE}
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {CASE_STUDIES_TEXT.SECTIONS.METRICS.LIST.map((metric, index) => {
+            const Icon = Icons[metric.icon as keyof typeof Icons] || PersonStanding
+            return (
+              <div
+                key={index}
+                className="bg-dark/50 rounded-lg p-8 text-center"
+              >
+                <Icon className="w-12 h-12 text-primary mx-auto mb-4" />
+                <div className="text-3xl font-bold text-primary mb-2">
+                  {metric.value}
+                </div>
+                <h3 className="font-bold mb-2">{metric.title}</h3>
+                <p className="text-light">{metric.description}</p>
+              </div>
+            )
+          })}
+        </div>
+      </section>
+
+      {/* Technologies Section */}
+      <section className="mt-24">
+        <h2 className="text-3xl font-bold mb-12 text-center">
+          {CASE_STUDIES_TEXT.SECTIONS.TECHNOLOGIES.TITLE}
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {CASE_STUDIES_TEXT.SECTIONS.TECHNOLOGIES.LIST.map((tech, index) => {
+            const Icon = Icons[tech.icon as keyof typeof Icons] || PersonStanding
+            return (
+              <div
+                key={index}
+                className="bg-dark/50 rounded-lg p-8"
+              >
+                <Icon className="w-12 h-12 text-primary mb-4" />
+                <h3 className="text-xl font-bold mb-4">{tech.title}</h3>
+                <p className="text-light">{tech.description}</p>
+              </div>
+            )
+          })}
+        </div>
+      </section>
+    </main>
   )
 }

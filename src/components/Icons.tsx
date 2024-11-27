@@ -1,0 +1,30 @@
+import {
+  TrendingUp,
+  Shield,
+  FileText,
+  Search,
+  Clock,
+  Brain,
+  Scale,
+  Award,
+  BarChart,
+  Lightbulb,
+  Database,
+  Network,
+  type LucideIcon,
+} from 'lucide-react'
+
+export const Icons: Record<string, LucideIcon> = {
+  'trending-up': TrendingUp,
+  'shield': Shield,
+  'file-text': FileText,
+  'search': Search,
+  'clock': Clock,
+  'brain': Brain,
+  'scale': Scale,
+  'award': Award,
+  'bar-chart': BarChart,
+  'lightbulb': Lightbulb,
+  'database': Database,
+  'network': Network,
+}

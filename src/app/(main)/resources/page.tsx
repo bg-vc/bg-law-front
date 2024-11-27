@@ -1,41 +1,115 @@
-import type { Metadata } from 'next'
-import { RESOURCES_TEXT } from '@/constants/text/pages'
+import { Metadata } from 'next'
+import Link from 'next/link'
+import { RESOURCES_TEXT } from '@/constants/text/pages/resources'
+import { Icons } from '@/components/Icons'
 
 export const metadata: Metadata = {
   title: RESOURCES_TEXT.META.TITLE,
   description: RESOURCES_TEXT.META.DESCRIPTION,
 }
 
-export default function ResourcePage() {
+export default function ResourcesPage() {
   return (
-    <div className="container mx-auto px-4 py-16">
-      <div className="max-w-4xl mx-auto mb-16">
-        <h1 className="text-4xl md:text-5xl font-bold text-center mb-6">
+    <main className="container mx-auto px-4 py-16">
+      {/* Hero Section */}
+      <div className="text-center mb-16">
+        <h1 className="text-5xl font-bold mb-6">
           {RESOURCES_TEXT.HERO.TITLE}
         </h1>
-        <p className="text-lg text-center text-light">
+        <p className="text-xl text-light max-w-3xl mx-auto">
           {RESOURCES_TEXT.HERO.DESCRIPTION}
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {RESOURCES_TEXT.RESOURCES.map((resource) => (
-          <div
-            key={resource.title}
-            className="bg-dark/50 rounded-lg p-6 hover:bg-dark/70 transition-colors"
-          >
-            <div className="flex items-center justify-between mb-4">
-              <span className="text-primary text-sm">{resource.category}</span>
-              <span className="text-light text-sm">{resource.readTime}</span>
+      {/* Featured Resources */}
+      <section>
+        <h2 className="text-3xl font-bold mb-12 text-center">
+          {RESOURCES_TEXT.SECTIONS.FEATURED.TITLE}
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {RESOURCES_TEXT.SECTIONS.FEATURED.LIST.map((resource, index) => {
+            const Icon = Icons[resource.icon as keyof typeof Icons]
+            return (
+              <div
+                key={index}
+                className="bg-dark/50 rounded-lg p-8 hover:bg-dark/70 transition-colors"
+              >
+                <div className="flex items-center gap-2 text-sm text-light/80 mb-4">
+                  <span>{resource.category}</span>
+                  <span>•</span>
+                  <span>{resource.readTime}</span>
+                </div>
+                {Icon && <Icon className="w-12 h-12 text-primary mb-4" />}
+                <h3 className="text-2xl font-bold mb-4">{resource.title}</h3>
+                <p className="text-light">{resource.description}</p>
+              </div>
+            )
+          })}
+        </div>
+      </section>
+
+      {/* Tools */}
+      <section className="mt-24">
+        <h2 className="text-3xl font-bold mb-12 text-center">
+          {RESOURCES_TEXT.SECTIONS.TOOLS.TITLE}
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {RESOURCES_TEXT.SECTIONS.TOOLS.LIST.map((tool, index) => {
+            const Icon = Icons[tool.icon as keyof typeof Icons]
+            return (
+              <Link
+                key={index}
+                href={tool.href}
+                className="bg-dark/50 rounded-lg p-8 hover:bg-dark/70 transition-colors"
+              >
+                {Icon && <Icon className="w-12 h-12 text-primary mb-4" />}
+                <h3 className="text-2xl font-bold mb-4">{tool.title}</h3>
+                <p className="text-light">{tool.description}</p>
+              </Link>
+            )
+          })}
+        </div>
+      </section>
+
+      {/* Categories */}
+      <section className="mt-24">
+        <h2 className="text-3xl font-bold mb-12 text-center">
+          {RESOURCES_TEXT.SECTIONS.CATEGORIES.TITLE}
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {RESOURCES_TEXT.SECTIONS.CATEGORIES.LIST.map((category, index) => {
+            const Icon = Icons[category.icon as keyof typeof Icons]
+            return (
+              <div
+                key={index}
+                className="bg-dark/50 rounded-lg p-8 text-center"
+              >
+                {Icon && <Icon className="w-12 h-12 text-primary mb-4 mx-auto" />}
+                <h3 className="text-xl font-bold mb-2">{category.title}</h3>
+                <p className="text-light">{category.count} resources</p>
+              </div>
+            )
+          })}
+        </div>
+      </section>
+
+      {/* Stats */}
+      <section className="mt-24">
+        <h2 className="text-3xl font-bold mb-12 text-center">
+          {RESOURCES_TEXT.SECTIONS.STATS.TITLE}
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {RESOURCES_TEXT.SECTIONS.STATS.LIST.map((stat, index) => (
+            <div
+              key={index}
+              className="bg-dark/50 rounded-lg p-8 text-center"
+            >
+              <div className="text-3xl font-bold mb-2">{stat.value}</div>
+              <p className="text-light">{stat.label}</p>
             </div>
-            <h3 className="text-xl font-semibold mb-3">{resource.title}</h3>
-            <p className="text-light mb-4">{resource.description}</p>
-            <button className="text-primary hover:text-primary/80 transition-colors">
-              {RESOURCES_TEXT.LABELS.READ_MORE}
-            </button>
-          </div>
-        ))}
-      </div>
-    </div>
+          ))}
+        </div>
+      </section>
+    </main>
   )
 }

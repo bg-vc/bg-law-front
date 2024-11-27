@@ -65,7 +65,7 @@ export default function About() {
       {/* Stats */}
       <div className="mt-16">
         <div className="grid md:grid-cols-3 gap-8">
-          {ABOUT_TEXT.STATS.map((stat, index) => (
+          {ABOUT_TEXT.SECTIONS.STATS.LIST.map((stat, index) => (
             <div key={index} className="text-center">
               <div className="text-4xl font-bold text-primary mb-2">{stat.value}</div>
               <div className="text-light">{stat.label}</div>
