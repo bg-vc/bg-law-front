@@ -8,10 +8,10 @@ import { cn } from '@/lib/utils'
 
 const navigation = [
   { name: 'Home', href: '/' },
-  { name: 'Practice Areas', href: '/practice-area' },
+  { name: 'Practice Areas', href: '/practice-areas' },
   { name: 'Attorneys', href: '/attorneys' },
   { name: 'Case Studies', href: '/case-studies' },
-  { name: 'Resources', href: '/resource' },
+  { name: 'Resources', href: '/resources' },
   { name: 'About', href: '/about' },
   { name: 'Contact', href: '/contact' },
 ]

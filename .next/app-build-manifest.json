@@ -16,11 +16,6 @@
       "static/chunks/main-app.js",
       "static/chunks/app/(main)/layout.js"
     ],
-    "/(main)/practice-area/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(main)/practice-area/page.js"
-    ],
     "/(main)/attorneys/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -30,11 +25,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/(main)/case-studies/page.js"
-    ],
-    "/(main)/resource/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(main)/resource/page.js"
     ],
     "/(main)/contact/page": [
       "static/chunks/webpack.js",
@@ -46,10 +36,10 @@
       "static/chunks/main-app.js",
       "static/chunks/app/(main)/about/page.js"
     ],
-    "/not-found": [
+    "/(main)/practice-areas/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/not-found.js"
+      "static/chunks/app/(main)/practice-areas/page.js"
     ]
   }
 }

@@ -14,19 +14,19 @@ const practiceAreas = [
     title: 'Construction Accidents',
     description: 'Protecting workers injured in construction site accidents',
     icon: HardHat,
-    href: '/practice-areas/construction-accidents'
+    href: '/practice-areas/construction-accident'
   },
   {
     title: 'Medical Malpractice',
     description: 'Justice for victims of medical negligence',
     icon: Stethoscope,
-    href: '/practice-areas/medical-malpractice'
+    href: '/practice-areas/medical-malpractices'
   },
   {
     title: 'Personal Injury',
     description: 'Comprehensive personal injury representation',
     icon: PersonStanding,
-    href: '/practice-areas/personal-injury'
+    href: '/practice-areas/personal-injuries'
   }
 ]
 
