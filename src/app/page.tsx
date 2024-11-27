@@ -33,7 +33,9 @@ const practiceAreas = [
 export default function Home() {
   return (
     <>
-      <Hero />
+      <div className="-mb-16">
+        <Hero />
+      </div>
       <ServiceGrid>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {practiceAreas.map((area, index) => (
