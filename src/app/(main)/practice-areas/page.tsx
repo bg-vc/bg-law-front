@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Car, HardHat, Stethoscope, PersonStanding } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Practice Area - LawCrest',
+  title: 'Practice Areas - BGLaw',
   description: 'Expert legal services in personal injury, workplace accidents, medical malpractice, and more.',
 }
 
@@ -33,7 +33,7 @@ export default function PracticeArea() {
   return (
     <div className="container mx-auto px-4 py-16">
       <div className="max-w-4xl mx-auto mb-16">
-        <h1 className="text-4xl md:text-5xl font-bold text-center mb-6">Practice Area</h1>
+        <h1 className="text-4xl md:text-5xl font-bold text-center mb-6">Practice Areas</h1>
         <p className="text-lg text-center text-light">
           Dedicated legal expertise across key areas of personal injury law.
         </p>

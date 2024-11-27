@@ -1,5 +1,9 @@
 {
   "/page": "app/page.js",
+  "/(main)/practice-areas/page": "app/(main)/practice-areas/page.js",
+  "/(main)/resources/page": "app/(main)/resources/page.js",
+  "/(main)/case-studies/page": "app/(main)/case-studies/page.js",
   "/(main)/attorneys/page": "app/(main)/attorneys/page.js",
-  "/(main)/practice-areas/page": "app/(main)/practice-areas/page.js"
+  "/(main)/about/page": "app/(main)/about/page.js",
+  "/(main)/contact/page": "app/(main)/contact/page.js"
 }
