@@ -6,38 +6,38 @@ import PageHeader from '@/components/PageHeader'
 import { Button } from '@/components/Button'
 
 export const metadata: Metadata = {
-  title: "About Us - LawCrest Legal",
-  description: "Learn about our dedicated team of personal injury attorneys and our commitment to fighting for justice."
+  title: "About BGLaw - Pioneering AI Legal Innovation",
+  description: "Discover how we're revolutionizing legal services by combining artificial intelligence with expert legal counsel."
 }
 
 const values = [
   {
     icon: Scale,
-    title: 'Justice & Integrity',
-    description: "We uphold the highest ethical standards and fight tirelessly for justice."
+    title: 'AI-Powered Justice',
+    description: "We leverage cutting-edge AI technology to ensure fair and accurate legal outcomes."
   },
   {
     icon: Heart,
-    title: 'Client-Centered',
-    description: "Our clients' well-being is our top priority. We provide personalized attention and support throughout your case."
+    title: 'Smart Client Care',
+    description: "Our AI-enhanced systems provide personalized attention and real-time case updates through intelligent automation."
   },
   {
     icon: Award,
-    title: 'Excellence',
-    description: "We strive for excellence in everything we do, from case preparation to courtroom advocacy."
+    title: 'Technical Excellence',
+    description: "We combine legal expertise with advanced AI capabilities to deliver superior results."
   },
   {
     icon: Users,
-    title: 'Community Focus',
-    description: "We are deeply committed to serving and improving our local community."
+    title: 'Digital Innovation',
+    description: "We're leading the legal industry's digital transformation through AI integration."
   }
 ]
 
 const stats = [
-  { number: '25+', label: 'Years of Experience' },
-  { number: '10,000+', label: 'Cases Won' },
-  { number: '$500M+', label: 'Recovered for Clients' },
-  { number: '98%', label: 'Success Rate' },
+  { number: '99.9%', label: 'AI Analysis Accuracy' },
+  { number: '10,000+', label: 'AI-Analyzed Cases' },
+  { number: '$500M+', label: 'AI-Optimized Settlements' },
+  { number: '75%', label: 'Faster Case Resolution' },
 ]
 
 export default function About() {
@@ -45,10 +45,11 @@ export default function About() {
     <div className="container mx-auto px-4 py-16">
       {/* Hero Section */}
       <PageHeader
-        title="Fighting for Justice Since 1998"
-        description="For over two decades, LawCrest Legal has been a beacon of hope for injury victims,
-          providing exceptional legal representation and unwavering support to our clients
-          during their most challenging times."
+        title="Revolutionizing Legal Services with AI"
+        description="BGLaw combines artificial intelligence with expert legal counsel to provide
+          unprecedented accuracy and efficiency in legal services. Our AI-powered
+          approach has transformed traditional legal practice, offering faster,
+          more precise, and data-driven solutions for our clients."
       />
 
       {/* Stats Section */}
@@ -76,16 +77,17 @@ export default function About() {
         <div>
           <h2 className="text-3xl mb-6">Our Mission</h2>
           <p className="text-light mb-6">
-            At LawCrest Legal, our mission is to provide exceptional legal representation
-            while maintaining the highest standards of integrity and professionalism. We
-            are committed to fighting for the rights of injury victims and ensuring they
-            receive the compensation they deserve.
+            At BGLaw, our mission is to harness the power of artificial intelligence to
+            revolutionize the legal industry. We're committed to delivering innovative,
+            data-driven solutions that transform the way our clients experience legal
+            services.
           </p>
           <p className="text-light">
             We understand that each case is unique, and we approach every client's
             situation with the dedication, attention to detail, and personalized service
             it deserves. Our team of experienced attorneys works tirelessly to achieve
-            the best possible outcomes for our clients.
+            the best possible outcomes for our clients, leveraging the latest AI
+            technologies to drive success.
           </p>
         </div>
       </div>
@@ -114,8 +116,9 @@ export default function About() {
         <h2 className="text-3xl mb-6">Meet Our Team</h2>
         <p className="text-light mb-8 max-w-2xl mx-auto">
           Our team of dedicated attorneys brings together decades of experience in
-          personal injury law. We work collaboratively to ensure the best possible
-          outcomes for our clients.
+          personal injury law, combined with expertise in AI and technological
+          innovation. We work collaboratively to ensure the best possible outcomes for
+          our clients.
         </p>
         <Link href="/attorneys">
           <Button size="lg">View Our Attorneys</Button>

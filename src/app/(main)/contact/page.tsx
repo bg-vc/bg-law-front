@@ -3,41 +3,41 @@ import PageHeader from '@/components/PageHeader'
 import { Phone, Mail, MapPin, Clock } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: "Contact Us - LawCrest Legal",
-  description: "Get in touch with our experienced legal team for a free consultation. We're here to help you get the justice you deserve."
+  title: "Contact BGLaw - AI-Powered Legal Consultation",
+  description: "Experience the future of legal consultation with our AI-enhanced intake process. Get a preliminary case analysis within minutes."
 }
 
 const contactInfo = [
   {
     icon: Phone,
-    title: "Phone",
+    title: "24/7 AI Assistant",
     details: [
-      { label: "Main Office", value: "(555) 123-4567" },
-      { label: "Toll Free", value: "1-800-LAW-HELP" }
+      { label: "Smart Hotline", value: "(555) 123-4567" },
+      { label: "AI Chat Support", value: "Available 24/7" }
     ]
   },
   {
     icon: Mail,
-    title: "Email",
+    title: "Digital Contact",
     details: [
-      { label: "General Inquiries", value: "info@lawcrest.com" },
-      { label: "Case Consultation", value: "cases@lawcrest.com" }
+      { label: "AI Intake", value: "ai-intake@bglaw.com" },
+      { label: "Case Analysis", value: "analysis@bglaw.com" }
     ]
   },
   {
     icon: MapPin,
-    title: "Office Location",
+    title: "Virtual & Physical Office",
     details: [
-      { label: "Address", value: "123 Legal Street, Suite 100" },
-      { label: "City", value: "San Francisco, CA 94105" }
+      { label: "Digital HQ", value: "bglaw.ai" },
+      { label: "Physical Location", value: "San Francisco, CA 94105" }
     ]
   },
   {
     icon: Clock,
-    title: "Office Hours",
+    title: "Availability",
     details: [
-      { label: "Weekdays", value: "9:00 AM - 6:00 PM" },
-      { label: "Weekends", value: "By Appointment" }
+      { label: "AI Services", value: "24/7 Automated Support" },
+      { label: "Human Team", value: "9:00 AM - 6:00 PM" }
     ]
   }
 ]
@@ -46,8 +46,8 @@ export default function ContactPage() {
   return (
     <div className="container py-12">
       <PageHeader
-        title="Contact Us"
-        description="Have questions about your case? Contact us today for a free consultation with our experienced legal team."
+        title="Experience AI-Enhanced Legal Support"
+        description="Get instant preliminary case analysis through our AI system, followed by personalized consultation with our expert legal team."
       />
 
       <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">

@@ -3,31 +3,31 @@ import { Button } from '@/components/Button'
 import { User2, UserCircle2, UserCog2 } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Our Attorneys',
-  description: 'Meet our experienced team of personal injury attorneys dedicated to fighting for your rights.',
+  title: 'AI-Augmented Legal Team - BGLaw',
+  description: 'Meet our tech-savvy attorneys who combine legal expertise with cutting-edge AI technology for superior case outcomes.',
 }
 
 const attorneys = [
   {
     name: 'John Smith',
-    role: 'Senior Partner',
+    role: 'AI Integration Director & Senior Partner',
     icon: User2,
-    specialties: ['Catastrophic Injuries', 'Motor Vehicle Accidents', 'Medical Malpractice'],
-    bio: 'With over 25 years of experience in personal injury law, John has successfully recovered hundreds of millions in compensation for his clients.',
+    specialties: ['AI-Powered Case Analysis', 'Predictive Legal Analytics', 'Digital Evidence Processing'],
+    bio: 'John leads our AI integration initiatives, combining 25 years of legal expertise with cutting-edge technology to revolutionize case analysis and strategy development.',
   },
   {
     name: 'Sarah Johnson',
-    role: 'Partner',
+    role: 'Data Analytics Partner',
     icon: UserCircle2,
-    specialties: ['Workplace Injuries', 'Product Liability', 'Personal Injury'],
-    bio: 'Sarah specializes in workplace injury cases and has a proven track record of securing favorable settlements for her clients.',
+    specialties: ['Machine Learning Applications', 'Automated Risk Assessment', 'Predictive Outcome Analysis'],
+    bio: 'Sarah specializes in leveraging AI and machine learning to analyze complex case data and predict optimal legal strategies.',
   },
   {
     name: 'Michael Chen',
-    role: 'Associate Attorney',
+    role: 'Legal Technology Specialist',
     icon: UserCog2,
-    specialties: ['Personal Injury', 'Insurance Claims', 'Wrongful Death'],
-    bio: 'Michael brings a detail-oriented approach to personal injury cases, ensuring no aspect of your claim is overlooked.',
+    specialties: ['AI-Driven Research', 'Digital Case Management', 'Automated Document Analysis'],
+    bio: 'Michael combines legal expertise with technical knowledge to implement AI solutions that enhance case preparation and analysis.',
   },
 ]
 
@@ -36,12 +36,12 @@ export default function Attorneys() {
     <div className="container mx-auto px-4 py-16">
       <div className="max-w-4xl mx-auto mb-16">
         <h1 className="text-4xl md:text-5xl mb-6 text-center">
-          Our Legal Team
+          AI-Augmented Legal Team
         </h1>
         <p className="text-light text-lg text-center">
-          Our experienced attorneys are dedicated to providing exceptional legal
-          representation. With decades of combined experience, we fight tirelessly
-          for our clients' rights.
+          Our innovative legal team combines decades of experience with cutting-edge AI technology. 
+          We leverage artificial intelligence and machine learning to analyze cases, predict outcomes, 
+          and develop winning strategies for our clients.
         </p>
       </div>
 

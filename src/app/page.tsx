@@ -5,26 +5,26 @@ import ServiceGrid from '@/components/layout/ServiceGrid'
 
 const practiceAreas = [
   {
-    title: 'Car Accidents',
-    description: 'Expert legal representation for victims of auto accidents',
+    title: 'AI-Powered Auto Analysis',
+    description: 'Advanced AI algorithms analyze accident data for stronger car accident cases',
     icon: Car,
     href: '/practice-areas/car-accidents'
   },
   {
-    title: 'Construction Accidents',
-    description: 'Protecting workers injured in construction site accidents',
+    title: 'Smart Site Safety',
+    description: 'AI-driven risk assessment and legal support for construction accidents',
     icon: HardHat,
     href: '/practice-areas/construction-accident'
   },
   {
-    title: 'Medical Malpractice',
-    description: 'Justice for victims of medical negligence',
+    title: 'Medical AI Analysis',
+    description: 'AI-enhanced medical record analysis for malpractice cases',
     icon: Stethoscope,
     href: '/practice-areas/medical-malpractices'
   },
   {
-    title: 'Personal Injury',
-    description: 'Comprehensive personal injury representation',
+    title: 'AI Case Assessment',
+    description: 'Data-driven personal injury case evaluation and strategy',
     icon: PersonStanding,
     href: '/practice-areas/personal-injuries'
   }

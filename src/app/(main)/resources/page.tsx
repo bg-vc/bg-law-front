@@ -1,40 +1,40 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Resources - BGLaw',
-  description: 'Access helpful legal resources and guides to help you understand your rights and the legal process.',
+  title: 'AI Legal Resources - BGLaw',
+  description: 'Access helpful guides and information on AI and technology in legal services to enhance your understanding of the legal process.',
 }
 
 const resources = [
   {
-    title: 'Personal Injury Guide',
-    description: 'A comprehensive guide to understanding your rights and the legal process in personal injury cases.',
-    category: 'Guide',
+    title: 'AI Legal Analysis Guide',
+    description: 'Understanding how artificial intelligence enhances legal analysis and case outcomes in personal injury law.',
+    category: 'Tech Guide',
   },
   {
-    title: 'Medical Records Checklist',
-    description: 'Essential documents needed for medical malpractice cases.',
-    category: 'Checklist',
+    title: 'AI Evidence Processing',
+    description: 'How we use machine learning to process and analyze evidence for stronger legal cases.',
+    category: 'Technology',
   },
   {
-    title: 'Car Accident FAQ',
-    description: 'Common questions and answers about car accident claims and legal procedures.',
+    title: 'Smart Legal FAQ',
+    description: 'Common questions about our AI-powered legal services and how technology improves case outcomes.',
     category: 'FAQ',
   },
   {
-    title: 'Workers Rights Overview',
-    description: 'Understanding your rights and protections in workplace injury cases.',
+    title: 'Digital Rights Overview',
+    description: 'Understanding your rights in the age of AI-enhanced legal services.',
     category: 'Guide',
   },
   {
-    title: 'Legal Terms Glossary',
-    description: 'Common legal terms and definitions used in personal injury cases.',
-    category: 'Guide',
+    title: 'AI Legal Terms',
+    description: 'Essential terms and concepts about AI technology in modern legal practice.',
+    category: 'Glossary',
   },
   {
-    title: 'Case Timeline',
-    description: 'What to expect during your personal injury case process.',
-    category: 'Guide',
+    title: 'AI Case Timeline',
+    description: 'How AI accelerates and optimizes your legal case process.',
+    category: 'Process',
   },
 ]
 
@@ -42,9 +42,9 @@ export default function ResourcePage() {
   return (
     <div className="container mx-auto px-4 py-16">
       <div className="max-w-4xl mx-auto mb-16">
-        <h1 className="text-4xl md:text-5xl font-bold text-center mb-6">Resources</h1>
+        <h1 className="text-4xl md:text-5xl font-bold text-center mb-6">AI Legal Resources</h1>
         <p className="text-lg text-center text-light">
-          Helpful guides and information to help you understand your legal rights and options.
+          Discover how our AI-powered legal solutions are revolutionizing case analysis and outcomes.
         </p>
       </div>
 

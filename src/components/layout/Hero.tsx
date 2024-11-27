@@ -8,16 +8,16 @@ export default function Hero() {
       <div className="mx-auto max-w-7xl h-full px-4 sm:px-6 lg:px-8 py-16 md:py-20 flex flex-col md:flex-row items-center justify-between">
         <div className="max-w-[500px] text-center md:text-left mb-12 md:mb-0">
           <p className="text-primary text-sm md:text-base uppercase tracking-wider mb-4">
-            Expert Legal Representation
+            AI-Powered Legal Innovation
           </p>
           <h1 className="text-gold text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-            Justice Made Clear
+            The Future of Law
           </h1>
           <p className="text-light text-base md:text-lg mb-8">
-            Experienced attorneys dedicated to protecting your rights. We handle your case with expertise and care.
+            Combining artificial intelligence with expert legal counsel for unprecedented accuracy and efficiency in case analysis and strategy.
           </p>
           <button className="bg-primary text-white px-8 py-3 rounded text-lg font-semibold hover:bg-opacity-90 transition-opacity">
-            Free Consultation
+            AI Case Analysis
           </button>
         </div>
 

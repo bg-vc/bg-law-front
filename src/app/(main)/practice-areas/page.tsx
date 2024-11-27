@@ -2,29 +2,29 @@ import type { Metadata } from 'next'
 import { Car, HardHat, Stethoscope, PersonStanding } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Practice Areas - BGLaw',
-  description: 'Expert legal services in personal injury, workplace accidents, medical malpractice, and more.',
+  title: 'AI-Powered Practice Areas - BGLaw',
+  description: 'Leveraging artificial intelligence for superior legal analysis in personal injury, workplace accidents, medical malpractice, and more.',
 }
 
 const practiceAreas = [
   {
-    title: 'Auto Accidents',
-    description: 'Skilled representation for car, truck, and motorcycle accident victims.',
+    title: 'AI-Enhanced Auto Accident Analysis',
+    description: 'Using advanced AI algorithms to analyze accident data, reconstruct scenarios, and build stronger cases.',
     Icon: Car
   },
   {
-    title: 'Workplace Injuries',
-    description: "Protecting workers' rights and ensuring fair compensation.",
+    title: 'Smart Workplace Safety',
+    description: "AI-powered risk assessment and pattern recognition for workplace injury cases.",
     Icon: HardHat
   },
   {
-    title: 'Medical Malpractice',
-    description: "Holding healthcare providers accountable for negligence.",
+    title: 'AI Medical Analysis',
+    description: "Utilizing machine learning to analyze medical records and identify malpractice patterns.",
     Icon: Stethoscope
   },
   {
-    title: 'Slip and Fall',
-    description: 'Expert guidance in premises liability cases.',
+    title: 'Predictive Liability Assessment',
+    description: 'AI-driven analysis of premises liability cases using advanced data modeling.',
     Icon: PersonStanding
   },
 ]
@@ -33,9 +33,9 @@ export default function PracticeArea() {
   return (
     <div className="container mx-auto px-4 py-16">
       <div className="max-w-4xl mx-auto mb-16">
-        <h1 className="text-4xl md:text-5xl font-bold text-center mb-6">Practice Areas</h1>
+        <h1 className="text-4xl md:text-5xl font-bold text-center mb-6">AI-Powered Practice Areas</h1>
         <p className="text-lg text-center text-light">
-          Dedicated legal expertise across key areas of personal injury law.
+          Revolutionizing legal services with artificial intelligence and machine learning technology.
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

@@ -5,51 +5,51 @@ import PageHeader from '@/components/PageHeader'
 import { Button } from '@/components/Button'
 
 export const metadata: Metadata = {
-  title: 'Case Studies - Our Success Stories | LawCrest Legal',
-  description: "Explore our successful personal injury cases and see how we've helped our clients get the compensation they deserve."
+  title: 'AI-Powered Success Stories - BGLaw',
+  description: "Discover how our AI-enhanced legal strategies have revolutionized case outcomes and maximized client compensation."
 }
 
 const caseStudies = [
   {
-    title: "Major Auto Accident Settlement",
-    category: "Auto Accident",
+    title: "AI-Driven Accident Analysis Victory",
+    category: "AI Auto Analysis",
     amount: "$2.5 Million",
-    description: "Successfully represented a family involved in a severe multi-vehicle collision, securing compensation for medical expenses, lost wages, and emotional trauma.",
+    description: "Leveraged advanced AI algorithms to analyze crash data and reconstruct the accident scenario, leading to a comprehensive settlement for our client.",
     icon: Car,
-    outcome: "Settlement reached within 8 months",
+    outcome: "AI-optimized settlement in 4 months",
     highlights: [
-      "Multiple serious injuries",
-      "Complex liability issues",
-      "Insurance company initially denied claim",
-      "Full compensation for all medical expenses"
+      "AI crash reconstruction analysis",
+      "Machine learning pattern recognition",
+      "Automated evidence processing",
+      "Predictive damage assessment"
     ]
   },
   {
-    title: "Workplace Safety Violation",
-    category: "Workplace Injury",
+    title: "Smart Workplace Safety Analysis",
+    category: "AI Safety Assessment",
     amount: "$1.8 Million",
-    description: "Represented a construction worker who suffered severe injuries due to unsafe working conditions and negligent safety protocols.",
+    description: "Used AI-powered risk assessment tools to identify safety violations and establish liability in a complex construction site accident.",
     icon: HardHat,
-    outcome: "Verdict after successful trial",
+    outcome: "Data-driven settlement success",
     highlights: [
-      "OSHA violations documented",
-      "Permanent disability compensation",
-      "Workers' compensation integration",
-      "Employer policy changes implemented"
+      "AI safety pattern analysis",
+      "Automated OSHA compliance check",
+      "Machine learning risk assessment",
+      "Predictive compensation modeling"
     ]
   },
   {
-    title: "Medical Malpractice Victory",
-    category: "Medical Malpractice",
+    title: "AI Medical Analysis Success",
+    category: "AI Medical Review",
     amount: "$3.2 Million",
-    description: "Secured justice for a patient who suffered complications due to a surgical error, resulting in additional procedures and extended recovery time.",
+    description: "Applied machine learning algorithms to analyze medical records and identify critical patterns of malpractice, leading to a substantial settlement.",
     icon: Stethoscope,
-    outcome: "Negotiated settlement",
+    outcome: "AI-enhanced negotiation victory",
     highlights: [
-      "Expert medical testimony",
-      "Multiple liable parties",
-      "Future medical costs covered",
-      "Hospital protocol improvements"
+      "AI medical record analysis",
+      "Pattern recognition in treatment data",
+      "Automated standard-of-care assessment",
+      "Predictive outcome modeling"
     ]
   },
   {
