@@ -38,7 +38,7 @@ export default function Header() {
         <div className="flex h-24 items-center justify-between">
           <div className="flex lg:flex-1">
             <Link href="/" className="-m-1.5 p-1.5 text-2xl font-bold text-gold">
-              LawCrest
+              BGLaw
             </Link>
           </div>
           
@@ -92,7 +92,7 @@ export default function Header() {
           <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-dark px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10">
             <div className="flex items-center justify-between">
               <Link href="/" className="-m-1.5 p-1.5 text-2xl font-bold text-gold">
-                LawCrest
+                BGLaw
               </Link>
               <button
                 type="button"
