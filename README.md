@@ -53,6 +53,87 @@ A modern, AI-driven legal services platform built with Next.js, TypeScript, and 
 - Digital consultation scheduling
 - Multi-channel communication options
 
+## 🌐 Internationalization (i18n) Preparation
+
+### Text Constants Structure
+All text content has been extracted into centralized constant files under `src/constants/text/pages/`:
+
+```typescript
+// Common structure across all pages
+export const PAGE_TEXT = {
+  META: {
+    TITLE: string,
+    DESCRIPTION: string,
+  },
+  HERO: {
+    TITLE: string,
+    DESCRIPTION: string,
+  },
+  // Page-specific sections
+  SECTIONS: {
+    // Various sections with their content
+  }
+}
+```
+
+### Pages with Extracted Text
+1. **Home** (`home.ts`)
+   - Meta information
+   - Hero section
+   - Features list
+   - Statistics
+
+2. **Practice Areas** (`practice-areas.ts`)
+   - Meta information
+   - Hero section
+   - Practice areas list with icons
+
+3. **Attorneys** (`attorneys.ts`)
+   - Meta information
+   - Hero section
+   - Attorney profiles
+   - Specialties and contact info
+
+4. **Case Studies** (`case-studies.ts`)
+   - Meta information
+   - Hero section
+   - Case studies with outcomes
+   - Success metrics
+
+5. **Resources** (`resources.ts`)
+   - Meta information
+   - Hero section
+   - Resource articles
+   - Categories and read times
+
+6. **About** (`about.ts`)
+   - Meta information
+   - Hero section
+   - Mission and vision
+   - Company values
+
+7. **Contact** (`contact.ts`)
+   - Meta information
+   - Hero section
+   - Contact information
+   - Form fields
+
+### Icon Mapping
+Each page implements type-safe icon mapping:
+```typescript
+const pageIcons: Record<string, LucideIcon> = {
+  'icon-key': IconComponent,
+  // ... more icons
+}
+```
+
+### Next Steps for i18n
+1. Evaluate and implement i18n library (e.g., next-intl)
+2. Create language switching mechanism
+3. Update routing for language support
+4. Implement translation files
+5. Add language-specific metadata
+
 ## 🔧 Installation
 
 ```bash
@@ -99,7 +180,7 @@ npm run dev
 
 ## 📖 Documentation
 
-For detailed documentation about components and features, please refer to the `/docs` directory.
+For more detailed documentation, please refer to the docs directory.
 
 ## 🤝 Contributing
 
